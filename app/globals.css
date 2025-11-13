@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* COLORS */
+  --color-background: #fefefe;
+  --color-text-color: #161616;
+  --color-selections: #bc4400;
+  --color-cm-green: #008907;
+  --color-cm-yellow: #fef71c;
+
+  /* FONT */
+  --font-clashGrotesk: "ClashGrotesk-Variable";
+  --font-barned: "barned";
+  --font-karl: "Karl"
+
+  /*  BREAK-POINTS  */
+  --breakpoint-3xl: 1650px;
+  --breakpoint-1xl: 1350px;
+  --breakpoint-sx: 375px;
+}
+
+/* HIDE SCROLL */
+::-webkit-scrollbar {
+  display: none;
+}
