@@ -8,7 +8,7 @@ import {
   User_Story,
 } from "../smaller_container";
 import clsx from "clsx";
-import { ol, span } from "@/components/style/style";
+import { img_style, ol, span } from "@/components/style/style";
 
 export const Project3 = ({ data }: { data: Project_Card[number] }) => {
   return (
@@ -129,9 +129,9 @@ export const Project3 = ({ data }: { data: Project_Card[number] }) => {
         experience. This user flow will map out the onboarding and savings flow
       </Project_Tag>
       <Project_Tag head_text="Onboarding Flow">
-        This user flow shows the roadmap that guides users through the app's
-        functionalities, ensuring a seamless and intuitive experience. This user
-        flow will map out the onboarding and savings flow
+        This user flow shows the roadmap that guides users through the
+        app&apos;s functionalities, ensuring a seamless and intuitive
+        experience. This user flow will map out the onboarding and savings flow
       </Project_Tag>
       <img
         src={"/prod3_img2.png.png"}
@@ -146,24 +146,203 @@ export const Project3 = ({ data }: { data: Project_Card[number] }) => {
       />
       <Project_Tag head_text="Research Reality">
         <span>
-          Right from the start of the design phase, it was clear the mobile
-          experience was everything for KoboSmart. Most residents and estate
-          admins preferred using their phones to manage day-to-day activities
-          like payments, guest passes, and communication. Prioritizing mobile
-          was not just a design choice. It was a reflection of how people live,
-          pay, and interact with their communities.
+          The core struggle students face with saving is easy access and lack of
+          discipline, often driven by social spending and poor tracking. This
+          research directly led to the development of the Locked Funds feature,
+          offering a secure place for money that cannot be touched until a major
+          milestone like graduation, directly addressing their need
+          for long-term planning. Additionally, students reported saving better
+          with social support, inspiring the Group Savings feature, which
+          leverages peer accountability and teamwork to boost commitment toward
+          shared goals.
         </span>
         <span>
-          The design approach focused on clarity and accessibility. We aimed
-          to make every interaction smooth, whether a user was viewing a bill or
-          signing up, ultimately building trust and a feeling of simplicity.
-          Each flow was built around real-world actions that users perform
-          daily, tested against scenarios drawn from interviews and mock
-          simulations with early adopters.
+          To make saving more achievable, the research revealed students
+          struggled to budget for specific items like rent, food, or textbooks,
+          leading to the creation of Target Savings, which allows them to track
+          progress visually across separate financial &quot;pots.&quot; A final
+          significant pain point was managing informal and quick-loan debt; this
+          inspired the Debt Management feature, providing a structured way to
+          list debts, set repayment schedules, and track progress to become
+          debt-free. Complementing financial security, the app also includes
+          a Job Portal to connect students with internships and work
+          opportunities, supporting their savings goals by helping them earn
+          income.
         </span>
         <span>
-          The result was a cohesive system that connects everyone in an estate:
-          residents, admins, and security.
+          These features were shaped directly from student pain points, turning
+          real challenges into simple tools that make money management easier,
+          clearer and more achievable.
+        </span>
+      </Project_Tag>
+      <Project_Tag head_text="On Boarding">
+        <span className={clsx("list-disc", span)}>
+          <p>
+            {" "}
+            <span>OTP Verification:</span> Security is established through
+            a One-Time Password (OTP) sent to the registered email address.{" "}
+          </p>
+          <p>
+            <span>School Information:</span> The app collects academic details,
+            including the school name, current level, and start/graduating
+            years, since it is tailored to students.
+          </p>
+          <p>
+            <span>Identity Upload:</span> Users are required to upload an image
+            of their identification (ID) document.
+          </p>
+          <p>
+            <span>Financial Goal Definition:</span> Users define their financial
+            goals by ticking applicable categories (e.g., save for a big
+            purchase, improve financial literacy).
+          </p>
+          <p>
+            <span>Future Savings Target:</span> Users must specify a desired
+            savings amount they would like to have in a set timeframe (e.g.,
+            three years).
+          </p>
+          <p>
+            <span>Transaction PIN:</span> A mandatory four-digit Transaction
+            PIN is created to secure future transactions.
+          </p>
+        </span>
+      </Project_Tag>
+      <img
+        src={"/prod3_img4.png"}
+        alt="onboarding flow"
+        className={clsx(img_style)}
+      />
+      <Project_Tag head_text="Dashboard">
+        <span className={clsx("list-disc", span)}>
+          <p>
+            <span>Onboarding Guide:</span> A prominent &quot;Onboarding
+            Video&quot; is displayed to guide new users.
+          </p>
+          <p>
+            <span>Total Balance Summary:</span> The user&apos;s &quot;Total
+            balance&quot; is visible with an immediate link to &quot;View
+            Savings.&quot;
+          </p>
+          <p>
+            <span>Instant Access to Key Features: </span> Quick-access cards are
+            provided for core functions like Lock Funds, Target Savings,
+            and Debt Management.
+          </p>
+          <p>
+            <span>Incentivized Savings:</span> A &quot;Discount & Deals&quot;
+            section promote saving by offering deals from partners.
+          </p>
+          <p>
+            <span>Educational Resources:</span> A &quot;Finance Resources&quot;
+            section provides links to learning materials on topics like
+            &quot;Budgeting and Savings&quot; and &quot;Financial Goal
+            Settings.&quot;
+          </p>
+        </span>
+      </Project_Tag>
+      <img
+        src={"/prod3_img5.png"}
+        alt="onboarding flow"
+        className={clsx(img_style)}
+      />
+      <Project_Tag head_text="Savings Plan">
+        <span className={clsx("list-disc", span)}>
+          <p>
+            <span>Dedicated Savings Dashboard:</span> The main screen provides a
+            comprehensive overview of the total savings balance and different
+            plan categories (Lock Funds, Target Savings, Debt Management).
+          </p>
+          <p>
+            <span>Lock Funds:</span> Users can secure savings long-term toward a
+            specific target with a visual progress bar.
+          </p>{" "}
+          <p>
+            <span>Target Savings:</span> Users can create separate savings pots
+            with visual tracking toward specific goals (e.g., Rent).
+          </p>
+          <p>
+            <span>Debt Tracker/Management: </span>A dedicated feature helps
+            users track their current debt balance with a visual progress
+            indicator.
+          </p>
+          <p>
+            <span>Group Savings:</span> A feature allows users to create or join
+            groups to save collectively, promoting social accountability.
+          </p>
+        </span>
+      </Project_Tag>
+      <img
+        src={"/prod3_img6.png"}
+        alt="onboarding flow"
+        className={clsx(img_style)}
+      />
+      <Project_Tag head_text="Job Board">
+        <span>
+          The job feature allows users to create a job profile that matches
+          their interests, making it easier to find suitable jobs. Users can
+          apply for jobs directly through the app and save jobs to apply for
+          later.
+        </span>
+      </Project_Tag>
+      <img
+        src={"/prod3_img7.png"}
+        alt="onboarding flow"
+        className={clsx(img_style)}
+      />
+      <Project_Tag head_text="Other Screens">
+        <span>
+          The account page lets users do various things in the app, like
+          changing their password and PIN, agreeing to the terms and conditions,
+          checking frequently asked questions, and finding ways to contact the
+          company.
+        </span>
+      </Project_Tag>
+      <img
+        src={"/prod3_img8.png"}
+        alt="onboarding flow"
+        className={clsx(img_style)}
+      />
+      <Project_Tag head_text="User Testing">
+        <span>
+          {" "}
+          The user testing for this application was conducted with four
+          participants via remote usability testing sessions lasting 45-60
+          minutes each, utilizing Google Meet and TLDV for data collection. The
+          methodology focused on observing user behavior, recording
+          difficulties, and gathering feedback through post-test interviews and
+          surveys. Key metrics for evaluation included task completion rates,
+          time taken, and error rates across critical functionalities like
+          the Onboarding Experience, Lock Funds Feature, Target Savings, Group
+          Savings, and overall Navigation and Usability.
+        </span>
+        <span>
+          Key findings revealed that while the Onboarding Experience was largely
+          successful, with 90% completion, the explanations for the Lock
+          Funds feature were unclear. Similarly, users appreciated the Group
+          Savings transparency but immediately desired a basic chat function for
+          better collaboration and communication among group members.
+          For Navigation and Usability, some users found the toggle icon in the
+          account page confusing.
+        </span>
+        <span>
+          Based on these findings, specific recommendations were made to improve
+          the application. To clarify the Lock Funds feature, an explainer video
+          or tooltip should be added during onboarding. For Group Savings,
+          integrating a basic chat function is recommended to enhance teamwork.
+          Finally, the navigation issue can be resolved by making the confusing
+          account page toggle icon more pronounced so its clickable function is
+          instantly recognized by users. I ensured the implement these issues
+          from the testing.
+        </span>
+      </Project_Tag>
+      <Project_Tag head_text="Looking Back">
+        <span>
+          Designing FundFlow taught me that financial design is about empathy.
+          Students don’t just need tools; they need guidance, motivation, and
+          trust. By focusing on their real challenges, I was able to create an
+          app that’s practical, human, and impactful. FundFlow proves that a
+          well-designed product can make saving feel simple, social, and
+          achievable.
         </span>
       </Project_Tag>
     </>

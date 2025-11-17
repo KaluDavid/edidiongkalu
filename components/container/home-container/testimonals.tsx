@@ -5,12 +5,12 @@ import { PiUserCircleBold } from "react-icons/pi";
 
 export const Testimonials = () => {
   return (
-    <section className="size-full flex pt-16 lg:pt-20 3xl:pt-[128] flex-col gap-[88] sm:px-10 lg:px-[90]  items-center justify-center ">
+    <section className="size-full flex pt-16 lg:pt-20 3xl:pt-[128] flex-col gap-[88] xl:px-10 1xl:px-[70]  items-center justify-center ">
       <H_Tag className="sm:text-[58px]! max-sm:px-5 text-[28px]! text-center tracking-[-1%]">
         What others say <br className="xs:hidden" /> about me.
       </H_Tag>
 
-      <div className="flex sm:flex-row flex-wrap flex-col lg:gap-0 gap justify-center items-center relative w-full max-sm:p-5 inset-0 lg:h-[1240px] h-fit py-0 max-sm:overflow-y-hidden 1xl:h-[1250px] 3xl:h-[1300px]!">
+      <div className="flex sm:flex-row flex-wrap flex-col lg:gap-0 gap justify-center items-center relative w-full max-sm:p-5 inset-0 xl:h-[1280px] h-fit py-5 overflow-hidden   3xl:h-[1300px]! ">
         {testimonals_card?.map((res, i) => (
           <div
             key={i}

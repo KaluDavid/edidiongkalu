@@ -20,7 +20,7 @@ export const Hero_Section = () => {
           Send me an email
         </Custom_Btn>
       </div>
-      <fieldset className="absolute max-sm:right-0 lg:left-110 3xl:top-60 top-60 3xl:left-155 sm:top-95 xl:top-45  flex justify-center items-center z-10 ">
+      <fieldset className="absolute max-sm:right-0 lg:left-110 3xl:top-60 top-60 3xl:left-155 sm:top-95 xl:top-55  flex justify-center items-center z-10 ">
         <img
           loading="lazy"
           src={"/thoughts.png"}

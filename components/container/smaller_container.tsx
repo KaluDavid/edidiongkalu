@@ -33,7 +33,7 @@ export const LG = () => {
   return (
     <H_Tag className="hidden sm:block w-full ">
       I help <span className="text-selections">product owners</span>{" "}
-      <br className="lg:block hidden" />
+      <br className="xl:block hidden" />
       find new ways to grow <br className="lg:block hidden" /> and scale.
     </H_Tag>
   );
@@ -110,7 +110,7 @@ export const Footer_1 = () => {
     <div className="lg:px-[90] px-5 py-16 sm:px-10 lg:py-20 3xl:py-[128] relative flex flex-col sm:gap-28 gap-24 3xl:gap-[180]  items-center justify-center w-full">
       <hr className={clsx("w-full border 3xl:border-2")} />
 
-      <fieldset className="absolute 3xl:left-0 left-0 xl:left-20   1xl:left-30 bottom-0 lg:flex hidden  justify-center items-center ">
+      <fieldset className="absolute lg:max-xl:left-0 xl:mr-[55rem] bottom-0 lg:flex hidden  justify-center items-center ">
         <img
           loading="lazy"
           src={"/tho.svg"}
@@ -178,7 +178,7 @@ export const Footer_2 = () => {
             height={20}
             loading="lazy"
           />
-          <p>About Me</p>
+          <Link href={"/about"}>About Me</Link>
           <img
             src={"/starr.svg"}
             alt={"star"}
@@ -189,7 +189,7 @@ export const Footer_2 = () => {
           <p>Resume</p>
         </div>{" "}
         <div className="flex sm:items-center gap-4 sm:flex-row flex-col flex-wrap items-end">
-          <p>Project 1</p>
+          <Link href={"/work/0"}>Project 1</Link>
           <img
             src={"/starr.svg"}
             alt={"star"}
@@ -197,7 +197,7 @@ export const Footer_2 = () => {
             height={20}
             loading="lazy"
           />
-          <p>Project 2</p>
+          <Link href={"/work/1"}>Project 2</Link>
           <img
             src={"/starr.svg"}
             alt={"star"}
@@ -205,7 +205,7 @@ export const Footer_2 = () => {
             height={20}
             loading="lazy"
           />
-          <p>Project 3</p>{" "}
+          <Link href={"/work/2"}>Project 3</Link>{" "}
           <img
             src={"/starr.svg"}
             alt={"star"}
@@ -213,7 +213,7 @@ export const Footer_2 = () => {
             height={20}
             loading="lazy"
           />
-          <p>Project 4</p>
+          <Link href={"/work/3"}>Project 4</Link>
         </div>
       </div>
 
@@ -388,15 +388,19 @@ const findings = [
 ];
 export const Findings_Box = () => {
   return (
-    <div className={clsx("flex  w-full gap-5 font-karl pt-5")}>
+    <div
+      className={clsx(
+        "grid lg:grid-cols-4 xl:grid-cols-5 sm:grid-cols-4  w-full gap-5 font-karl pt-5"
+      )}
+    >
       {findings?.map((res) => (
         <div
           key={res.num}
-          className="flex p-4 text-background flex-col gap-3 bg-[#5E5E5E] rounded-2xl"
+          className="flex p-4  text-background flex-col gap-3 bg-[#5E5E5E] rounded-2xl"
         >
           <p className="text-base font-medium">{res.head}</p>
           <p className="text-sm">{res.text}</p>
-          <p className="text-3xl tracking-widest text-cm-yellow font-semibold">
+          <p className="text-3xl tracking-wide sm:tracking-wider text-cm-yellow font-semibold">
             {res.num}
           </p>
         </div>
