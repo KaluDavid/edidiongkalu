@@ -187,7 +187,7 @@ export const Footer_2 = () => {
           />
           <p>Resume</p>
         </div>{" "}
-        <div className="flex sm:items-center gap-4 sm:flex-row flex-col flex-wrap items-end">
+        <div className="flex sm:items-center gap-4 sm:flex-row flex-col flex-wrap ">
           <Link href={"/work/0"}>Project 1</Link>
           <img
             src={"/starr.svg"}

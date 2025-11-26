@@ -50,7 +50,7 @@ export const projects_card: Project_Card = [
     id: "2",
     text: "Accelerating digital health adoption by creating a user friendly website that clearly communicates impact.",
     link: "",
-    bg: "bg-[url('/work3.png')]",
+    bg: "bg-[url('/work3.png')] ",
 
     // OTHERS
     head: "Enhancing Healthcare Record-Keeping for Mothers and Children",

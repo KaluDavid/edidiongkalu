@@ -16,6 +16,7 @@ export const Hero_Section = () => {
             width={32}
             height={32}
             className="2xl:size-auto size-[22px] "
+            loading="lazy"
           />{" "}
           Send me an email
         </Custom_Btn>
@@ -44,16 +45,14 @@ export const Hero_Section = () => {
           </span>
         </div>
       </fieldset>
-      <fieldset className="max-lg:border-5 max-sm:border-3 rounded-2xl ">
-        <img
-          src={"/mimic.png"}
-          width={1520}
-          height={1036}
-          alt="mic"
-          className="relative lg:h-full sm:h-[600px] h-[480px] w-full object-cover rounded-2xl lg:size-auto lg:object-contain"
-          loading="lazy"
-        />
-      </fieldset>
+      <img
+        src={"/hero_img.png"}
+        width={1520}
+        height={1036}
+        alt="mic"
+        className="relative bg-clip-border  max-sm:h-[480px] sm:w-screen 3xl:h-[1036] object-cover sm:rounded-4xl rounded-2xl lg:object-cover border-3 "
+        loading="lazy"
+      />
     </section>
   );
 };

@@ -5,7 +5,7 @@ import { Work_Section } from "@/components/container/home-container/work-section
 
 const Home = () => {
   return (
-    <section className=" flex w-full pt-20 flex-col overflow-x-hidden">
+    <section className=" flex w-full pt-50 flex-col overflow-x-hidden">
       <Hero_Section />
       <Work_Section />
       <Services_Section />

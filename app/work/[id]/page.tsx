@@ -40,6 +40,7 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
             src={data.img}
             alt="project image"
             className="size-full rounded-2xl sm:rounded-4xl border-3"
+            loading="lazy"
           />
           <div className="flex sm:flex-row flex-col w-full justify-between gap-8 ">
             <Project_Box
