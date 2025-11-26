@@ -108,8 +108,8 @@ export const Project_Card = ({
 export const Footer_1 = () => {
   return (
     <div className="lg:px-[90] px-5 py-16 sm:px-10 lg:py-20 3xl:py-[128] relative flex flex-col sm:gap-28 gap-24 3xl:gap-[180]  items-center justify-center w-full">
-      <hr className={clsx("w-full border 3xl:border-2")} />
-
+      {/* <hr className={clsx("w-full border 3xl:border-2")} /> */}
+      <span />{" "}
       <fieldset className="absolute lg:max-xl:left-0 xl:mr-[55rem] bottom-0 lg:flex hidden  justify-center items-center ">
         <img
           loading="lazy"
@@ -126,7 +126,6 @@ export const Footer_1 = () => {
           </span>
         </div>
       </fieldset>
-
       <div className="items-center justify-center flex gap-1 sm:gap-4 flex-col relative">
         <span className="rounded-full text-white bg-cm-green -rotate-14 size-11.5 sm:size-16 3xl:size-24 flex items-center justify-center 3xl:border-5 border-3 border-black absolute sm:-top-25 -top-7 3xl:-top-30 sm:mt-10 -ml-53 sm:-ml-30 3xl:-ml-50">
           <RiMessage2Fill className="3xl:text-[52px] text-2xl sm:text-3xl" />
@@ -287,7 +286,7 @@ export const CD = ({
 
 export const Project_List = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-8">
+    <div className="flex flex-col  gap-8">
       {projects_card?.map((res) => (
         <Project_Card
           key={res.id}
@@ -333,7 +332,7 @@ export const Project_Tag = ({
   children: ReactNode;
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 font-semibold text-lg">
+    <div className="flex flex-col  gap-3 sm:gap-4 font-semibold text-lg">
       <H_Tag className="3xl:text-6xl! sm:leading-[120%]! sm:text-[45px]! text-[35px]! w-full">
         {head_text}
       </H_Tag>

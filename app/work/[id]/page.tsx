@@ -2,14 +2,12 @@ import {
   H_Tag,
   P_Tag,
   Project_Box,
-  Project_Card,
 } from "@/components/container/smaller_container";
 import { Project1 } from "@/components/container/work-container.tsx/project1";
 import { Project2 } from "@/components/container/work-container.tsx/project2";
 import { Project3 } from "@/components/container/work-container.tsx/project3";
 import { Project4 } from "@/components/container/work-container.tsx/project4";
 import { projects_card } from "@/components/data/projects_card";
-import { notFound } from "next/navigation";
 
 const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
@@ -19,13 +17,13 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
   const renderProjectContent = () => {
     switch (data.id) {
       case "0":
-        return <Project1 data={data} />;
+        return <Project1 />;
       case "1":
-        return <Project2 data={data} />;
+        return <Project2 />;
       case "2":
-        return <Project3 data={data} />;
+        return <Project3 />;
       case "3":
-        return <Project4 data={data} />;
+        return <Project4 />;
       default:
         return <div>No layout defined.</div>;
     }
@@ -68,7 +66,7 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
         </P_Tag>
         {renderProjectContent()}
       </section>
-
+      {/* 
       <div className="flex flex-col bg-cm-yellow border-3 rounded-4xl py-10 sm:py-20 px-5 sm:px-10 lg:px-[90] justify-center text-center items-center gap-[88px]">
         <H_Tag className="3xl:text-6xl! sm:leading-[120%]! sm:text-[45px]! text-[35px]! ">
           View these other Projects
@@ -85,7 +83,7 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

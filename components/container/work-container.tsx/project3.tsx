@@ -1,348 +1,327 @@
 import { Project_Card } from "@/components/data/projects_card";
 import React from "react";
-import {
-  Findings_Box,
-  H_Tag,
-  P_Tag,
-  Project_Tag,
-  User_Story,
-} from "../smaller_container";
-import clsx from "clsx";
+import { Project_Tag } from "../smaller_container";
 import { img_style, ol, span } from "@/components/style/style";
+import clsx from "clsx";
 
-export const Project3 = ({ data }: { data: Project_Card[number] }) => {
+export const Project3 = () => {
   return (
     <>
-      <Project_Tag head_text="Business Goal: Promoting Financial Responsibility Among Students">
-        The business goal was to help students save with discipline by
-        introducing a structured, user-friendly app tailored to their lifestyle.
-        FundFlow empowers students to set target savings goals (e.g.,
-        graduation, travel, emergency funds), lock funds to prevent impulse
-        spending, collaborate through group savings for shared goals and
-        track income, expenses, and debts in one place. The product’s vision was
-        not just to help students save, it aimed to build lifelong financial
-        responsibility.
-      </Project_Tag>{" "}
-      <Project_Tag head_text="Market Size & Growth">
-        The student fintech market in Africa is expanding rapidly, driven by
-        rising smartphone adoption and the demand for accessible financial
-        tools. Over 25 million tertiary students across Africa manage money
-        digitally, yet only 15% use structured savings tools. In Nigeria
-        alone, youth fintech adoption grew by 45% in 2024, indicating strong
-        potential for student-focused solutions. This gap represents an
-        opportunity to position FundFlow as the leading savings companion for
-        students.
-      </Project_Tag>{" "}
+      <Project_Tag head_text="Business Goal: Improving Vaccination Adherence and Medical Record Accessibility Across Africa">
+        The primary goal of VaxNow is to improve medical record accessibility
+        while increasing vaccination adherence across Africa. The product aims
+        to bridge the gap between parents, healthcare providers, and digital
+        documentation. It seeks to reduce missed vaccinations, reduce
+        misdiagnosis caused by poor documentation, and promote continuity of
+        care across hospitals. By offering digital records, medication tracking,
+        real time reminders, and quick access to verified medical professionals,
+        VaxNow positions itself as a trusted, long term healthcare companion for
+        families.
+      </Project_Tag>
       <Project_Tag head_text="Forecast & Strategy">
-        The forecast centred on achieving steady adoption by partnering early
-        with universities and student bodies to build trust and drive initial
-        engagement. This strategy also relied heavily on using peer
-        influence through features like Group Savings to boost ongoing
-        engagement, alongside a referral reward system designed to encourage
-        organic growth. The ultimate plan was for the app to grow with its users
-        by gradually expanding into the young professional market as students
-        transitioned after graduation, supporting them through their journey to
-        financial independence.
+        The long term strategy is built around accessibility, scalability, and
+        integration. VaxNow aims to establish itself as the go to platform for
+        vaccination and medication logging. Phase one focuses on Nigerian urban
+        and semi urban cities. Phase two will involve strategic integration with
+        government immunization programs. Phase three expands into private
+        hospitals and schools. Our roadmap prioritizes a strong ecosystem
+        approach. The more stakeholders adopt the system, the more valuable the
+        platform becomes for everyone involved. families.
       </Project_Tag>{" "}
       <Project_Tag head_text="Project Goal">
-        As the designer, my goal was to create a platform that translates
-        complex financial habits into simple, guided experiences, making every
-        interaction feel friendly, goal-driven, and rewarding by focusing
-        on simplicity in saving and goal-setting, transparency in tracking
-        progress, and motivation through visual milestones and community
-        support.
-      </Project_Tag>{" "}
-      <Project_Tag head_text="Research">
         <span>
-          Fundflow was researched based on industry trends and validated through
-          user interviews to fit the current job market where every penny
-          matters.
+          The core goal was to design a simple, intuitive, and reliable digital
+          platform where parents can track vaccinations, record medications,
+          connect with doctors, and locate hospitals. The solution needed to
+          reduce cognitive load, accommodate low digital literacy, and work even
+          in low internet environments.
         </span>
         <span>
-          For this project, I utilized both qualitative and quantitative
-          research methods. The quantitative approach involved distributing
-          survey questionnaires to 28 undergraduate students, while the
-          qualitative approach included conducting virtual interviews with 2
-          undergraduates via Google Meet. These methods were carefully selected
-          to ensure a comprehensive understanding of the problem and to gather
-          valuable insights.{" "}
+          The project also required designing a scalable database structure that
+          hospitals can plug into. This allows medical records to remain
+          accessible regardless of where the patient visits.
         </span>
+        families.
       </Project_Tag>
-      <Project_Tag head_text="Some Key Findings">
-        <Findings_Box />
+      <Project_Tag head_text="User Persona">
+        <img src={"/project3_2.png"} alt="user persona" className={img_style} />
+      </Project_Tag>{" "}
+      <Project_Tag head_text="Information Architecture">
+        <img
+          src={"/project3_3.png"}
+          alt="information_architecture"
+          className={img_style}
+        />
       </Project_Tag>
       <Project_Tag head_text="Competitive Analysis">
-        <ul className={clsx("list-disc", ol, span)}>
+        I compared existing child health apps, generic reminder apps, hospital
+        EMR systems, and vaccination websites. I found that while some tools
+        offered reminders and others offered documentation, few offered both in
+        a unified experience. Even fewer catered to African parents or addressed
+        local vaccination schedules. In regards to competition, it was clear
+        parents wanted simplicity, reliability, and localized information, while
+        hospitals wanted accuracy, digitization, and easy access to patient
+        records.
+      </Project_Tag>{" "}
+      <Project_Tag head_text="Key Findings">
+        <ol className={clsx(ol)}>
+          <li>Parents lose physical vaccination cards frequently.</li>
+          <li>Parents lose physical vaccination cards frequently.</li>
+          <li>Medication tracking is a growing need among young families.</li>
           <li>
-            <span>Piggyvest: </span>Focuses heavily on general savings plans but
-            lacks education-focused features like graduation locks or
-            student-specific budget categories.
-          </li>
-          <li>
-            <span>Risevest: </span>Targets investment-oriented users but
-            overlooks basic savings structures and day-to-day budgeting tools.
-          </li>
-          <li>
-            {" "}
-            <span>Cowrywise:</span> Emphasizes structured savings, yet it
-            lacks social and group-saving features that attract younger,
-            collaborative users.
-          </li>
-        </ul>
-      </Project_Tag>
-      <Project_Tag head_text="My Opportunity">
-        <ul className={clsx("list-disc", ol, span)}>
-          <li>
-            <span>Lock Funds Feature:</span> Allows students to secure savings
-            until graduation, solving impulse spending issues—a feature
-            competitors lack.
-          </li>
-          <li>
-            <span>Group Savings:</span> Promotes accountability and teamwork,
-            ideal for younger, socially connected users.
-          </li>
-          <li>
-            <span>Debt Management:</span> Tools to track and reduce debt,
-            helping students prepare for life after graduation.
+            Many parents want quick access to doctors at affordable rates.
           </li>{" "}
-        </ul>
-      </Project_Tag>
-      <Project_Tag head_text="User Stories">
+          <li>
+            Hospitals need a shared record system to avoid mismatched data.{" "}
+          </li>{" "}
+          <li>
+            Health content must be simple, trustworthy, and locally relevant.{" "}
+          </li>
+        </ol>
         <span>
-          After analyzing research insights and identifying key pain points, I
-          converted user needs into actionable user stories. These stories
-          helped guide the design process by focusing on what students truly
-          wanted to achieve with the app. Each story represents a real scenario
-          drawn from user interviews and surveys, ensuring the final product
-          solves genuine problems and supports everyday financial goals.
+          These findings informed every design decision made during the project.
         </span>
+      </Project_Tag>
+      <Project_Tag head_text="Interactive Design & Accessibility">
+        <span>
+          My role focused on designing a website that clearly communicates the
+          value of the VaxNow mobile app while guiding users toward download,
+          subscription, or learning more about the service. Interaction design
+          was centred on clarity, flow, and reducing cognitive effort for
+          parents who may already be overwhelmed by childcare responsibilities.
+          To achieve this, I crafted a layout that highlights core features
+          through simple visual hierarchies. I used clean typography, friendly
+          illustrations, and intuitive navigation to make the website feel
+          approachable. Each section of the site moves the user from awareness
+          to understanding to action.
+        </span>
+        <span>
+          Accessibility was integrated from the start. High contrast colors were
+          chosen to support low vision users. Buttons were designed with large
+          tap areas for mobile browsing. Text was broken into digestible
+          segments to support users with limited attention or lower literacy
+          levels. Alt text was added to all images and infographics. The website
+          also supports responsive viewing to ensure parents browsing on low end
+          devices have a smooth experience. The goal was to ensure every visitor
+          can understand the purpose of the platform, trust its reliability, and
+          take the next step with confidence.
+        </span>
+      </Project_Tag>{" "}
+      <Project_Tag head_text="Ideation & Prioritization">
+        <span>
+          During ideation, I explored multiple website structures, hero
+          concepts, and storytelling approaches. Several layout directions were
+          tested, including a product first layout, a parent centric emotional
+          narrative, and a data driven educational format.
+        </span>
+        <span>
+          After reviewing user research, I prioritised a storyline that blends
+          trust, clarity, and emotional reassurance. Parents needed to feel that
+          VaxNow is not just another app but a reliable companion. The website
+          therefore emphasizes real problems, clear benefits, and visual
+          walkthroughs of how the app simplifies their daily routines.
+        </span>
+      </Project_Tag>
+      <Project_Tag head_text="Overcoming Constraints">
+        Designing for an audience with varied digital literacy meant simplifying
+        every interaction on the website. One challenge was presenting medical
+        information without making the site feel heavy or intimidating. I solved
+        this by breaking complex features into small, friendly sections
+        supported by icons and short explanatory text. Balancing informational
+        depth with visual charm required thoughtful design decisions. Every
+        section was refined repeatedly to maintain clarity, warmth, and trust.
+      </Project_Tag>
+      <Project_Tag head_text="Research to Reality">
+        The research directly informed the website&apos;s structure and tone,
+        addressing parental fears about losing paper vaccination cards by
+        creating a clear visual guide to the digital vaccination card feature
+        and prominently showcasing the automatic reminder system. Concerns about
+        self-medication were resolved by adding a section explaining
+        the medication tracker&apos;s dosage routine guidance, while user demand
+        for trusted support led to a dedicated explanation of
+        the DocChatfeature, including pricing. The website successfully became a
+        bridge, also integrating a separate page focused on the hospital
+        partnership vision to meet provider requests for a shared record system.
+      </Project_Tag>
+      <Project_Tag head_text="Home Page">
+        <span className={span}>
+          <p>
+            <span>Clear Value Proposition:</span> The headline immediately
+            states the core benefit: &quot;Never miss a vaccine&quot; with a
+            &quot;vaccine tracker and reminder&quot; focus.
+          </p>
+          <p>
+            <span>Problem-Solution Framing:</span> The design uses contrasting
+            sections to highlight the pain point (&quot;Tired of losing track of
+            your vaccinations?&quot;) and introduce the solution (&quot;A
+            centralized platform...&quot;).
+          </p>
+          <p>
+            <span>Affordable Pricing:</span> The page clearly displays three
+            distinct pricing tiers for different user needs.
+          </p>
+          <p>
+            <span>Trust & Credibility:</span> A dedicated section showcases
+            logos of &quot;partners and collaborators&quot; to build trust.
+          </p>
+          <p>
+            <span>Platform Availability:</span> The bottom section provides
+            clear links/badges to download the app on both the Apple App Store
+            and Google Play Store.
+          </p>
+        </span>
+      </Project_Tag>
+      <img src={"/project3_4.png"} alt="home_page" className={img_style} />
+      <img src={"/project3_5.png"} alt="home_page2" className={img_style} />
+      <img src={"/project3_6.png"} alt="home_page3" className={img_style} />
+      <img src={"/project3_7.png"} alt="home_page4" className={img_style} />
+      <Project_Tag head_text="Features Page">
+        <span className={span}>
+          <p>
+            <span>Vaccination Appointment Reminders:</span> A section highlights
+            the ability to &quot;Never miss a vaccination appointment
+            again.&quot;
+          </p>
+          <p>
+            <span>Medication Management:</span> A feature is dedicated to
+            helping users &quot;Manage your medications effortlessly&quot; with
+            easy setup.
+          </p>
+          <p>
+            <span>Expert Medical Advice:</span> The app offers a mechanism to
+            &quot;Get expert medical advice at your fingertips,&quot; likely via
+            chat or consultation.
+          </p>
+          <p>
+            <span>Secure Record Sharing:</span> Users can &quot;Securely share
+            your health records with healthcare providers.&quot;
+          </p>
 
-        <div className="flex sm:flex-row flex-col w-full justify-between  gap-8">
-          <User_Story text="As a student, I want to lock funds until after graduation so I can avoid spending impulsively" />{" "}
-          <User_Story text="As a student, I want to save with my friends toward a shared goal so we can stay accountable." />{" "}
-          <User_Story text="As a student in debt, I want to track what I owe and plan repayments." />
-        </div>
+          <p>
+            <span>Location-Based Services: </span>A map-like graphic suggests a
+            feature to &quot;Find the right clinic near you.&quot;
+          </p>
+          <p>
+            <span>FAQ:</span> A dedicated section addresses common user
+            questions about the product.
+          </p>
+        </span>
       </Project_Tag>
-      <Project_Tag head_text="User Flow">
-        This user flow shows the roadmap that guides users through the
-        app&apos;s functionalities, ensuring a seamless and intuitive
-        experience. This user flow will map out the onboarding and savings flow
-      </Project_Tag>
-      <Project_Tag head_text="Onboarding Flow">
-        This user flow shows the roadmap that guides users through the
-        app&apos;s functionalities, ensuring a seamless and intuitive
-        experience. This user flow will map out the onboarding and savings flow
+      <img src={"/project3_8.png"} alt="features_page1" className={img_style} />
+      <img src={"/project3_9.png"} alt="features_page2" className={img_style} />
+      <img
+        src={"/project3_10.png"}
+        alt="features_page3"
+        className={img_style}
+      />
+      <Project_Tag head_text="Record Keeping">
+        <span className={span}>
+          <p>
+            <span>Data Security:</span> A section prominently assures users
+            about data privacy and security with a large visual metaphor of a
+            key/lock.
+          </p>
+          <p>
+            <span>Easy Data Sharing:</span> A dedicated section highlights the
+            simplicity of sharing health data with doctors.
+          </p>
+          <p>
+            <span>Secure Backup:</span> The platform offers a service
+            to securely backup and restore health records.
+          </p>
+        </span>
       </Project_Tag>
       <img
-        src={"/prod3_img2.png.png"}
-        alt="onboarding flow"
-        className="size-full"
+        src={"/project3_11.png"}
+        alt="recording_keeping1"
+        className={img_style}
       />
-      <Project_Tag head_text="Savings Flow"> </Project_Tag>
       <img
-        src={"/prod3_img3.png.png"}
-        alt="savings flow"
-        className="size-full"
+        src={"/project3_12.png"}
+        alt="recording_keeping1"
+        className={img_style}
       />
-      <Project_Tag head_text="Research Reality">
+      <Project_Tag head_text="Vaccine Education">
+        <span className={span}>
+          <p>
+            <span>Video-Based Learning:</span> A large section is dedicated to
+            learning about vaccines &quot;through engaging videos.&quot;
+          </p>
+          <p>
+            <span>Search Input:</span> Users can search using any NGX stock or
+            index fund ticker symbol (e.g., DANGCEM, GTCO, MTNN).
+          </p>
+          <p>
+            <span>Premium Subscription:</span> A clear call-to-action
+            (&quot;Upgrade&quot;) promotes KBS Invest Premium for advanced
+            projections and unlimited AI queries.
+          </p>
+
+          <p>
+            <span>Suggested Tickers:</span> Quick-access buttons are provided
+            for frequently searched or popular NGX stocks (e.g., DANGCEM,
+            AIRTELAFRI, BUACEMENT).
+          </p>
+        </span>
+      </Project_Tag>
+      <img
+        src={"/project3_13.png"}
+        alt="vaccine_education"
+        className={img_style}
+      />{" "}
+      <img
+        src={"/project3_14.png"}
+        alt="vaccine_education"
+        className={img_style}
+      />
+      <Project_Tag head_text="Usability Testing">
         <span>
-          The core struggle students face with saving is easy access and lack of
-          discipline, often driven by social spending and poor tracking. This
-          research directly led to the development of the Locked Funds feature,
-          offering a secure place for money that cannot be touched until a major
-          milestone like graduation, directly addressing their need
-          for long-term planning. Additionally, students reported saving better
-          with social support, inspiring the Group Savings feature, which
-          leverages peer accountability and teamwork to boost commitment toward
-          shared goals.
+          To validate the clarity and usability of the VaxNow website, I
+          conducted a small round of usability testing with five mothers. Each
+          participant represented our primary audience group, making their
+          feedback particularly valuable for refining the site.
         </span>
         <span>
-          To make saving more achievable, the research revealed students
-          struggled to budget for specific items like rent, food, or textbooks,
-          leading to the creation of Target Savings, which allows them to track
-          progress visually across separate financial &quot;pots.&quot; A final
-          significant pain point was managing informal and quick-loan debt; this
-          inspired the Debt Management feature, providing a structured way to
-          list debts, set repayment schedules, and track progress to become
-          debt-free. Complementing financial security, the app also includes
-          a Job Portal to connect students with internships and work
-          opportunities, supporting their savings goals by helping them earn
-          income.
+          The test sessions focused on two core tasks. Navigating the website to
+          locate the vaccine tracker information, and finding details about
+          nearby hospitals. These tasks helped evaluate how intuitive the site
+          structure was and whether users could quickly access high value
+          features without guidance.
         </span>
         <span>
-          These features were shaped directly from student pain points, turning
-          real challenges into simple tools that make money management easier,
-          clearer and more achievable.
+          Overall, the results were encouraging. Eighty percent of participants
+          reported that the website was easy to navigate and that the flow
+          between sections felt natural. However, forty percent expressed
+          discomfort with the brightness of the red colour used in certain
+          areas. This feedback highlighted the need to soften the visual tone to
+          make the experience more welcoming and less intense for users.
         </span>
-      </Project_Tag>
-      <Project_Tag head_text="On Boarding">
-        <span className={clsx("list-disc", span)}>
-          <p>
-            {" "}
-            <span>OTP Verification:</span> Security is established through
-            a One-Time Password (OTP) sent to the registered email address.{" "}
-          </p>
-          <p>
-            <span>School Information:</span> The app collects academic details,
-            including the school name, current level, and start/graduating
-            years, since it is tailored to students.
-          </p>
-          <p>
-            <span>Identity Upload:</span> Users are required to upload an image
-            of their identification (ID) document.
-          </p>
-          <p>
-            <span>Financial Goal Definition:</span> Users define their financial
-            goals by ticking applicable categories (e.g., save for a big
-            purchase, improve financial literacy).
-          </p>
-          <p>
-            <span>Future Savings Target:</span> Users must specify a desired
-            savings amount they would like to have in a set timeframe (e.g.,
-            three years).
-          </p>
-          <p>
-            <span>Transaction PIN:</span> A mandatory four-digit Transaction
-            PIN is created to secure future transactions.
-          </p>
-        </span>
-      </Project_Tag>
-      <img
-        src={"/prod3_img4.png"}
-        alt="onboarding flow"
-        className={clsx(img_style)}
-      />
-      <Project_Tag head_text="Dashboard">
-        <span className={clsx("list-disc", span)}>
-          <p>
-            <span>Onboarding Guide:</span> A prominent &quot;Onboarding
-            Video&quot; is displayed to guide new users.
-          </p>
-          <p>
-            <span>Total Balance Summary:</span> The user&apos;s &quot;Total
-            balance&quot; is visible with an immediate link to &quot;View
-            Savings.&quot;
-          </p>
-          <p>
-            <span>Instant Access to Key Features: </span> Quick-access cards are
-            provided for core functions like Lock Funds, Target Savings,
-            and Debt Management.
-          </p>
-          <p>
-            <span>Incentivized Savings:</span> A &quot;Discount & Deals&quot;
-            section promote saving by offering deals from partners.
-          </p>
-          <p>
-            <span>Educational Resources:</span> A &quot;Finance Resources&quot;
-            section provides links to learning materials on topics like
-            &quot;Budgeting and Savings&quot; and &quot;Financial Goal
-            Settings.&quot;
-          </p>
-        </span>
-      </Project_Tag>
-      <img
-        src={"/prod3_img5.png"}
-        alt="onboarding flow"
-        className={clsx(img_style)}
-      />
-      <Project_Tag head_text="Savings Plan">
-        <span className={clsx("list-disc", span)}>
-          <p>
-            <span>Dedicated Savings Dashboard:</span> The main screen provides a
-            comprehensive overview of the total savings balance and different
-            plan categories (Lock Funds, Target Savings, Debt Management).
-          </p>
-          <p>
-            <span>Lock Funds:</span> Users can secure savings long-term toward a
-            specific target with a visual progress bar.
-          </p>{" "}
-          <p>
-            <span>Target Savings:</span> Users can create separate savings pots
-            with visual tracking toward specific goals (e.g., Rent).
-          </p>
-          <p>
-            <span>Debt Tracker/Management: </span>A dedicated feature helps
-            users track their current debt balance with a visual progress
-            indicator.
-          </p>
-          <p>
-            <span>Group Savings:</span> A feature allows users to create or join
-            groups to save collectively, promoting social accountability.
-          </p>
-        </span>
-      </Project_Tag>
-      <img
-        src={"/prod3_img6.png"}
-        alt="onboarding flow"
-        className={clsx(img_style)}
-      />
-      <Project_Tag head_text="Job Board">
         <span>
-          The job feature allows users to create a job profile that matches
-          their interests, making it easier to find suitable jobs. Users can
-          apply for jobs directly through the app and save jobs to apply for
-          later.
-        </span>
+          Based on these insights, I made two key adjustments. Firstly, I
+          refined the colour palette to incorporate softer and more calming
+          tones. Secondly, I introduced a sticky navigation bar to improve
+          movement across sections, especially for users browsing on mobile
+          devices. These refinements improved the clarity, and overall user
+          experience of the website.{" "}
+        </span>{" "}
       </Project_Tag>
-      <img
-        src={"/prod3_img7.png"}
-        alt="onboarding flow"
-        className={clsx(img_style)}
-      />
-      <Project_Tag head_text="Other Screens">
-        <span>
-          The account page lets users do various things in the app, like
-          changing their password and PIN, agreeing to the terms and conditions,
-          checking frequently asked questions, and finding ways to contact the
-          company.
-        </span>
-      </Project_Tag>
-      <img
-        src={"/prod3_img8.png"}
-        alt="onboarding flow"
-        className={clsx(img_style)}
-      />
-      <Project_Tag head_text="User Testing">
+      <Project_Tag head_text="Business Impact">
         <span>
           {" "}
-          The user testing for this application was conducted with four
-          participants via remote usability testing sessions lasting 45-60
-          minutes each, utilizing Google Meet and TLDV for data collection. The
-          methodology focused on observing user behavior, recording
-          difficulties, and gathering feedback through post-test interviews and
-          surveys. Key metrics for evaluation included task completion rates,
-          time taken, and error rates across critical functionalities like
-          the Onboarding Experience, Lock Funds Feature, Target Savings, Group
-          Savings, and overall Navigation and Usability.
+          The redesigned website communicates the VaxNow value proposition with
+          clarity and credibility, resulting in stronger user engagement and
+          increased intent to download the app. The structured storytelling
+          improved parent understanding of key features, and the accessibility
+          improvements broadened the platform’s reach across different device
+          types.
         </span>
         <span>
-          Key findings revealed that while the Onboarding Experience was largely
-          successful, with 90% completion, the explanations for the Lock
-          Funds feature were unclear. Similarly, users appreciated the Group
-          Savings transparency but immediately desired a basic chat function for
-          better collaboration and communication among group members.
-          For Navigation and Usability, some users found the toggle icon in the
-          account page confusing.
-        </span>
-        <span>
-          Based on these findings, specific recommendations were made to improve
-          the application. To clarify the Lock Funds feature, an explainer video
-          or tooltip should be added during onboarding. For Group Savings,
-          integrating a basic chat function is recommended to enhance teamwork.
-          Finally, the navigation issue can be resolved by making the confusing
-          account page toggle icon more pronounced so its clickable function is
-          instantly recognized by users. I ensured the implement these issues
-          from the testing.
-        </span>
-      </Project_Tag>
-      <Project_Tag head_text="Looking Back">
-        <span>
-          Designing FundFlow taught me that financial design is about empathy.
-          Students don’t just need tools; they need guidance, motivation, and
-          trust. By focusing on their real challenges, I was able to create an
-          app that’s practical, human, and impactful. FundFlow proves that a
-          well-designed product can make saving feel simple, social, and
-          achievable.
+          By presenting VaxNow as a trustworthy medical companion rather than
+          just another app, the website supports long term brand positioning. It
+          empowers parents to make informed decisions, encourages hospital
+          collaborations, and aids the team in pitching to government agencies
+          and health organizations. The website now serves as an essential
+          gateway into the VaxNow ecosystem.
         </span>
       </Project_Tag>
     </>
