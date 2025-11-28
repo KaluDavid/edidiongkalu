@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${clashGrotesk.variable} ${barned.variable} ${karl.variable} font-barned text-text-color antialiased bg-background overflow-x-hidden w-screen `}
+        className={`${clashGrotesk.variable} ${barned.variable} ${karl.variable} font-barned text-text-color antialiased bg-background overflow-x-hidden w-screen  m-auto`}
       >
         <PageWrapper>
           <Header />

@@ -10,12 +10,15 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
       <motion.div
         key={pathname}
         initial={{ y: "100%" }}
-        animate={{ y: 0 }}
-        exit={{}}
-        transition={{
-          duration: 1.2,
-          ease: [0.22, 1, 0.36, 1],
+        animate={{
+          y: 0,
+          transition: {
+            duration: 1.8,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.35,
+          },
         }}
+        exit={{}}
         className="size-full"
       >
         {children}
