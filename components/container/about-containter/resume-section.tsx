@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { Custom_Btn } from "../custom-button/custom-btn";
 import { H_Tag, P_Tag } from "../smaller_container";
 import { resume } from "@/components/data/resume";
+import Link from "next/link";
 
 export const Resume_Section = () => {
   return (
@@ -17,7 +18,9 @@ export const Resume_Section = () => {
           </H_Tag>
           <div className="flex flex-col gap-2">
             <H_Tag className="flex flex-col gap-2 ">
-              <span className="text-[35sm:text-5xl! leading-0">{res.company}</span>
+              <span className="text-[35sm:text-5xl! leading-0">
+                {res.company}
+              </span>
               <span className="text-[26px]! pt-2">{res.location}</span>
             </H_Tag>
             <P_Tag>{res.text}</P_Tag>
@@ -25,15 +28,19 @@ export const Resume_Section = () => {
         </div>
       ))}
       <hr className={clsx("w-full border 3xl:border-2  text-black")} />
-      <Custom_Btn className="w-fit">
-        <img
-          src={"/Files.svg"}
-          width={32}
-          height={32}
-          className="2xl:size-auto size-[22px] "
-        />
-        Download my CV
-      </Custom_Btn>
+
+      <Link href={"/Edidiong Kalu CV.pdf"} download>
+        {" "}
+        <Custom_Btn className="w-fit">
+          <img
+            src={"/Files.svg"}
+            width={32}
+            height={32}
+            className="2xl:size-auto size-[22px] "
+          />
+          Download my CV
+        </Custom_Btn>
+      </Link>
     </div>
   );
 };

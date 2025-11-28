@@ -16,19 +16,18 @@ export const Header = () => {
 
   const pathname = usePathname();
 
-  const handleMenu = () => {
+  const handleMenu = (time: number) => {
     setTimeout(() => {
       setIsOpen((prev) => !prev);
-    }, 200);
+    }, time);
   };
   return (
-    <motion.header
-      key={pathname}
-      initial={{ opacity: 0, y: -80 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      className="flex py-6 px-5 sm:gap-10 fixed top-0 z-90 sm:px-10 lg:px-[90] 3xl:py-16 bg-white/90 backdrop-blur-xs  items-center justify-between  w-full "
-    >
+    // <motion.header
+    //   key={pathname}
+    //   initial={{ opacity: 0, y: -80 }}
+    //   animate={{ opacity: 1, y: 0 }}
+    //   transition={{ duration: 1 }}
+    <header className="flex py-6 px-5 sm:gap-10 fixed top-0 z-90 sm:px-10 lg:px-[90] 3xl:py-16 bg-white/90 backdrop-blur-xs  items-center justify-between  w-full ">
       <div className="flex lg:gap-4 sm:gap-10  justify-between w-full sm:w-fit">
         <Link
           href={"/"}
@@ -57,7 +56,7 @@ export const Header = () => {
           <Nav className="hidden sm:block" />
           <div
             className={clsx("sm:hidden ", isOpen && transition)}
-            onClick={handleMenu}
+            onClick={() => handleMenu(200)}
           >
             {isOpen ? "CLOSE" : "MENU"}
           </div>
@@ -76,11 +75,12 @@ export const Header = () => {
             }}
             className="flex flex-col items-center fixed top-28  shadow-2xl rounded-4xl py-8 px-4 bg-background  z-90  gap-12 w-[210px] right-3 "
           >
-            <Nav className="sm:hidden" />
+            <Nav close={() => handleMenu(300)} className="sm:hidden" />
             <LinkedIN className="sm:hidden" />
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.header>
+    </header>
+    // {/* </motion.header> */}
   );
 };

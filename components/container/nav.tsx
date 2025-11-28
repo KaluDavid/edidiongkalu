@@ -10,7 +10,13 @@ const nav = [
   { name: "ABOUT", link: "/about" },
   { name: "WORK", link: "/work" },
 ];
-export const Nav = ({ className }: { className: string }) => {
+export const Nav = ({
+  className,
+  close,
+}: {
+  className: string;
+  close?: () => void;
+}) => {
   const pathname = usePathname();
 
   const isActiveRoute = (link: string) => {
@@ -25,6 +31,7 @@ export const Nav = ({ className }: { className: string }) => {
         return (
           <Link
             key={index}
+            onClick={close}
             href={nav.link}
             className={clsx(
               className,
@@ -44,13 +51,19 @@ export const LinkedIN = ({ className }: { className: string }) => {
   return (
     <span
       className={clsx(
-        "sm:p-4 max-sm:py-2 max-sm:px-4 3xl:p-5 3xl:text-5xl  justify-center text-3xl w-full sm:w-fit max-sm:rounded-2xl flex max-sm:gap-3",
+        "sm:p-3 max-sm:py-2 max-sm:px-4 3xl:p-5 3xl:text-5xl items-center  justify-center text-3xl w-full sm:w-fit max-sm:rounded-2xl flex max-sm:gap-3",
         className,
         b_style
       )}
     >
-      <PiLinkedinLogoLight />{" "}
-      <span className="sm:hidden font-bold text-xl!">LINKEDIN</span>
+      {/* <PiLinkedinLogoLight />{" "} */}
+      <img
+        src="/sms.svg"
+        alt="mail"
+        loading="lazy"
+        className="size-8 object-contain"
+      />
+      <span className="sm:hidden font-bold text-xl! pt-0.5">EMAIL</span>
     </span>
   );
 };

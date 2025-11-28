@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/container/header";
 import Footer from "@/components/container/footer";
 import { Karla } from "next/font/google";
+import PageWrapper from "@/components/container/page-wrapper";
 
 const clashGrotesk = localFont({
   src: "../public/fonts/ClashGrotesk-Variable.woff2",
@@ -31,11 +32,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${clashGrotesk.variable} ${barned.variable} ${karl.variable} font-barned text-text-color antialiased bg-background overflow-x-hidden w-screen`}
+        className={`${clashGrotesk.variable} ${barned.variable} ${karl.variable} font-barned text-text-color antialiased bg-background overflow-x-hidden w-screen `}
       >
-        <Header />
-        {children}
-        <Footer />
+        <PageWrapper>
+          <Header />
+          {children}
+          <Footer />
+        </PageWrapper>
       </body>
     </html>
   );

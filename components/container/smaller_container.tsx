@@ -80,28 +80,37 @@ export const Project_Card = ({
   link: string;
 }) => {
   return (
-    <div
+    <fieldset
       className={clsx(
-        "3xl:border-4 border-3 3xl:h-[956px] h-[552px] sm:h-[850px] lg:h-[744px] rounded-2xl sm:rounded-4xl p-2 sm:p-4 border-black flex flex-col justify-end items-end bg-center bg-cover bg-no-repeat",
-        bg
+        "3xl:border-4 border-3 w-full rounded-2xl sm:rounded-4xl  pb-2  sm:pb-4 border-black flex flex-col justify-between sm:justify-end items-end bg-cover xl:h-fit bg-[#e6e6e6] bg-top  bg-no-repeat max-sm:h-[480px] 3xl:h-[900]"
       )}
     >
-      <div className="3xl:border-4 border-3 border-black rounded-2xl sm:rounded-4xl bg-[#FEFEFE] sm:p-12 p-[13px] flex flex-col gap-6.5 sm:gap-22  w-full *:first:max-3xl:text-2xl">
-        <P_Tag className="max-sm:leading-[150%] max-sm:font-medium max-sm:text-lg!">
-          {text}
-        </P_Tag>
-        <Link
-          href={link}
-          className="flex gap-2 items-center text-sm sm:text-xl 3xl:text-2xl font-bold font-clashGrotesk"
-        >
-          <span> View Case Study</span>
-          <LiaArrowRightSolid
-            className="font-black! text-2xl sm:text-3xl"
-            fontWeight={900}
-          />
-        </Link>
+      <img
+        src={bg}
+        width={1520}
+        height={1036}
+        alt="mic"
+        className="relative bg-clip-border   object-cover  rounded-2xl sm:rounded-4xl max-sm:h-[400px]"
+        loading="lazy"
+      />
+      <div className="w-full px-2 sm:px-4  -mt-30 z-10 m-auto">
+        <div className="3xl:border-4 border-3 border-black rounded-2xl sm:rounded-4xl bg-[#FEFEFE] sm:p-12 p-[13px] flex flex-col gap-6.5 sm:gap-22  w-full *:first:max-3xl:text-2xl ">
+          <P_Tag className="max-sm:leading-[150%] max-sm:font-medium max-sm:text-lg!">
+            {text}
+          </P_Tag>
+          <Link
+            href={link}
+            className="flex gap-2 items-center text-sm sm:text-xl 3xl:text-2xl font-bold font-clashGrotesk"
+          >
+            <span> View Case Study</span>
+            <LiaArrowRightSolid
+              className="font-black! text-2xl sm:text-3xl"
+              fontWeight={900}
+            />
+          </Link>
+        </div>
       </div>
-    </div>
+    </fieldset>
   );
 };
 
@@ -286,7 +295,7 @@ export const CD = ({
 
 export const Project_List = () => {
   return (
-    <div className="flex flex-col  gap-8">
+    <div className="flex flex-col size-full  gap-8">
       {projects_card?.map((res) => (
         <Project_Card
           key={res.id}

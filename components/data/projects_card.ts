@@ -17,7 +17,7 @@ export const projects_card: Project_Card = [
     id: "0",
     text: "Creating Nigeria’s most accessible stock insight platform by rethinking how financial information is delivered.",
     link: "",
-    bg: "bg-[url('/work1.png')]",
+    bg: "/work1.png",
 
     // OTHERS
     head: "KBS Insight: Financial Literacy for all Nigerians",
@@ -33,7 +33,7 @@ export const projects_card: Project_Card = [
     id: "1",
     text: "Transforming bill payments for over 3,000 residents across multiple estates through intuitive design.",
     link: "",
-    bg: "bg-[url('/work2.png')]",
+    bg: "/work2.png",
 
     // OTHERs
     head: "KoboSmart: Building a Smarter Way to Manage Estates and Pay Bills",
@@ -50,7 +50,7 @@ export const projects_card: Project_Card = [
     id: "2",
     text: "Accelerating digital health adoption by creating a user friendly website that clearly communicates impact.",
     link: "",
-    bg: "bg-[url('/work3.png')] ",
+    bg: "/work3.png ",
 
     // OTHERS
     head: "Enhancing Healthcare Record-Keeping for Mothers and Children",
@@ -67,7 +67,7 @@ export const projects_card: Project_Card = [
     id: "3",
     text: "Driving better financial habits for students by simplifying savings, debt tracking and long-term goal planning.",
     link: "",
-    bg: "bg-[url('/work4.png')]",
+    bg: "/work4.png",
 
     // OTHERS
     head: "FundFlow: Building Financial Discipline  For Students",

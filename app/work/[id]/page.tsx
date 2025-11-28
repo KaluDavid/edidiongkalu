@@ -31,7 +31,7 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   return (
     <>
-      <section className="flex flex-col justify-center py-10 sm:py-20 size-full  overflow-x-hidden  gap-16 sm:gap-16 px-5 sm:px-10 lg:px-[90] relative ">
+      <section className="flex flex-col justify-center pb-10 sm:pb-20 pt-30 sm:pt-50 size-full  overflow-x-hidden  gap-16 sm:gap-16 px-5 sm:px-10 lg:px-[90] relative ">
         <H_Tag className="sm:text-[67px]! text-[35px]! w-full ">
           {data.head}
         </H_Tag>{" "}

@@ -1,5 +1,11 @@
 export const resume = [
   {
+    date: "Feb 2025 – Present",
+    company: "KoboSmart",
+    location: "Lagos, Nigeria",
+    text: "At KoboSmart, I led the end-to-end design of a multi-role mobile and web platform that simplifies estate management and digital bill payments. I collaborated closely with product managers, engineers, and business leads to design experiences for residents, estate admins, security officers, and super admins. I crafted high-fidelity prototypes and tested with real residents and estate admins. My designs helped transform a fragmented manual process into a connected, transparent, and scalable platform.",
+  },
+  {
     date: "Dec 2022 – Apr 2023",
     company: "Whim",
     location: "Dalla, USA",
