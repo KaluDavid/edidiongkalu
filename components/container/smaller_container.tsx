@@ -194,7 +194,9 @@ export const Footer_2 = () => {
             height={20}
             loading="lazy"
           />
-          <p>Resume</p>
+          <Link href={"/Edidiong Kalu CV.pdf"} download>
+            Resume
+          </Link>
         </div>{" "}
         <div className="flex sm:items-center gap-4 sm:flex-row flex-col flex-wrap ">
           <Link href={"/work/0"}>Project 1</Link>
@@ -229,7 +231,14 @@ export const Footer_2 = () => {
       <div className="flex max-sm:flex-col-reverse  max-sm:gap-8 sm:items-center justify-between w-full">
         <p>© {new Date().getFullYear()}. All rights reserved. Edidiong Kalu.</p>
         <div className="flex items-center gap-4  text-2xl 3xl:text-5xl">
-          <PiLinkedinLogoLight /> <PiDribbbleLogo /> <FaXTwitter />
+          <Link
+            href={"https://www.linkedin.com/in/edidiongkalu/"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <PiLinkedinLogoLight />
+          </Link>{" "}
+          <PiDribbbleLogo /> <FaXTwitter />
         </div>
       </div>
     </div>

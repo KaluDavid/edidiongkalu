@@ -17,9 +17,55 @@
   --breakpoint-3xl: 1650px;
   --breakpoint-1xl: 1350px;
   --breakpoint-sx: 375px;
+
+
+  /* ANIMATION */
+
+  /* --animate-scroll-slow: scroll 20s linear infinite; */
+  --animate-scroll: scroller 5s  infinite linear;
+}
+
+
+.carousel{
+margin: auto;
+width: 100%;
+background-color: #008907;
+display: flex;
+overflow-x: auto;
+}
+
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  animation: scroller 10s infinite linear;
+  /* padding-right: 26em; */
+}
+
+.card {
+/* flex: 0 0 5em; */
+/* height: 5em; */
+/* padding: 1em; */
+gap: 1em;
+/* background: #000; */
+font-size: 3rem;
+border-radius: .2em;
+text-align: center;
+align-content: center;
+color: white;
+}
+
+
+/* SLIDER ANIMATION */
+@keyframes scroller {
+from{translate: 0;}
+to{translate: -100%;}
 }
 
 /* HIDE SCROLL */
 ::-webkit-scrollbar {
   display: none;
 }
+
+

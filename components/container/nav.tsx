@@ -49,14 +49,16 @@ export const Nav = ({
 
 export const LinkedIN = ({ className }: { className: string }) => {
   return (
-    <span
+    <Link
+      href={"mailto:edidiongkalu@gmail.com"}
+      rel="noopener noreferrer"
+      target="_blank"
       className={clsx(
         "sm:p-3 max-sm:py-2 max-sm:px-4 3xl:p-5 3xl:text-5xl items-center  justify-center text-3xl w-full sm:w-fit max-sm:rounded-2xl flex max-sm:gap-3",
         className,
         b_style
       )}
     >
-      {/* <PiLinkedinLogoLight />{" "} */}
       <img
         src="/sms.svg"
         alt="mail"
@@ -64,6 +66,6 @@ export const LinkedIN = ({ className }: { className: string }) => {
         className="size-8 object-contain"
       />
       <span className="sm:hidden font-bold text-xl! pt-0.5">EMAIL</span>
-    </span>
+    </Link>
   );
 };

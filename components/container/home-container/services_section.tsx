@@ -1,5 +1,5 @@
 import { H_Tag, P_Tag } from "../smaller_container";
-import { scrolling_text } from "@/components/data/scrolling_text";
+import { Carousel } from "./carousel";
 
 export const Services_Section = () => {
   return (
@@ -14,27 +14,7 @@ export const Services_Section = () => {
           It’s not just to design what looks good, but to create what works.
         </P_Tag>
       </div>
-
-      {/* SCROLLING TEXT */}
-      <div className="bg-cm-green border-b-3 xl:border-y-5 py-10 lg:py-20 3xl:py-[128] flex w-full gap-8 overflow-x-hidden  flex-nowrap ">
-        {scrolling_text?.map((res, i) => (
-          <span
-            key={i}
-            className="flex items-center text-[#FEFEFE] w-full inset-0 "
-          >
-            <img
-              src={res.star}
-              alt={res.text}
-              width={74}
-              height={74}
-              className="mx-8 sm:size-10 lg:size-auto size-6"
-            />
-            <H_Tag className="leading-0 whitespace-nowrap w-full ">
-              {res.text}
-            </H_Tag>
-          </span>
-        ))}
-      </div>
+      <Carousel />
     </section>
   );
 };
