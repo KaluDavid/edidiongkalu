@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CD, H_Tag, P_Tag } from "../smaller_container";
 import clsx from "clsx";
 export const Hero_Section = () => {

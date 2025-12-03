@@ -50,7 +50,7 @@ export const Hero_Section = () => {
         width={1520}
         height={1036}
         alt="mic"
-        className="relative bg-clip-border  max-sm:h-[480px] sm:w-screen 3xl:h-[1036] object-cover sm:rounded-4xl rounded-2xl lg:object-cover border-3 "
+        className="relative bg-clip-border  sm:w-screen 3xl:h-[1036] object-contain sm:object-cover sm:rounded-4xl rounded-2xl lg:object-cover border-3 "
         loading="lazy"
       />
     </section>

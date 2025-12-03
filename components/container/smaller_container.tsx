@@ -82,18 +82,20 @@ export const Project_Card = ({
   return (
     <fieldset
       className={clsx(
-        "3xl:border-4 border-3 w-full rounded-2xl sm:rounded-4xl  pb-2  sm:pb-4 border-black flex flex-col justify-between sm:justify-end items-end bg-cover xl:h-fit bg-[#e6e6e6] bg-top  bg-no-repeat max-sm:h-[480px] 3xl:h-[900]"
+        "3xl:border-4 border-3 w-full rounded-2xl sm:rounded-4xl  pb-2  sm:pb-4 border-black flex flex-col justify-between sm:justify-end items-end bg-cover xl:h-fit bg-[#e6e6e6] bg-top  bg-no-repeat 3xl:h-[900]"
       )}
     >
+      {/* max-sm:h-[480px]  */}
       <img
         src={bg}
         width={1520}
         height={1036}
         alt="mic"
-        className="relative bg-clip-border   object-cover  rounded-2xl sm:rounded-4xl max-sm:h-[400px]"
+        className="relative bg-clip-border object-contain  sm:object-cover  rounded-2xl sm:rounded-4xl "
         loading="lazy"
       />
-      <div className="w-full px-2 sm:px-4  -mt-30 z-10 m-auto">
+      {/* max-sm:h-[400px] */}
+      <div className="w-full px-2 sm:px-4  sm:-mt-30 z-10 m-auto">
         <div className="3xl:border-4 border-3 border-black rounded-2xl sm:rounded-4xl bg-[#FEFEFE] sm:p-12 p-[13px] flex flex-col gap-6.5 sm:gap-22  w-full *:first:max-3xl:text-2xl ">
           <P_Tag className="max-sm:leading-[150%] max-sm:font-medium max-sm:text-lg!">
             {text}
@@ -238,7 +240,7 @@ export const Footer_2 = () => {
           >
             <PiLinkedinLogoLight />
           </Link>{" "}
-          <PiDribbbleLogo /> <FaXTwitter />
+          {/* <PiDribbbleLogo /> <FaXTwitter /> */}
         </div>
       </div>
     </div>

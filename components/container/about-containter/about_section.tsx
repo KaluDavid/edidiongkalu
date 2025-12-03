@@ -30,7 +30,7 @@ export const About_Section = () => {
       </P_Tag>
       <fieldset className="flex flex-col min-w-[30%] h-fit  relative">
         <img
-          src={"/eddy1.jpg"}
+          src={"/edd.jpg"}
           alt="quote"
           width={421}
           height={554}
