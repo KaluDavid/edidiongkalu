@@ -76,7 +76,7 @@ export const Project1 = () => {
         </span>
       </Project_Tag>
       <img src={"/prod2_img2.png"} alt="research" className={img_style} />
-      <Project_Tag head_text="Project Goal">
+      <Project_Tag head_text="Competitive Analysis">
         <span>
           In examining three key platforms (NASD PLC, Chaka and Nigerian
           Exchange Group), clear contrasts emerged that helped define how KBS
