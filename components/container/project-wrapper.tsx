@@ -38,9 +38,13 @@ export const ProjectWrapper = ({ data, projectId }: Data) => {
   );
 
   const isUnlocked = projectId !== PROTECTED_PROJECT_ID || unlockedProjectId;
+  const to_up = window.scrollTo(0, 0);
 
   const handlePasswordSuccess = () => {
     setUnlockedProjectId(projectId);
+    setInterval(() => {
+      to_up;
+    }, 300);
   };
 
   // Show modal if project is protected and not unlocked
