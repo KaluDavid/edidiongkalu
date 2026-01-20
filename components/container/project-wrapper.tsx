@@ -44,7 +44,7 @@ export const ProjectWrapper = ({ data, projectId }: Data) => {
   };
 
   // Show modal if project is protected and not unlocked
-  if (projectId === PROTECTED_PROJECT_ID && !unlockedProjectId) {
+  if (projectId === PROTECTED_PROJECT_ID && !isUnlocked) {
     return <PasswordModal onSuccess={handlePasswordSuccess} />;
   }
 
