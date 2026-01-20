@@ -59,14 +59,14 @@ export const P_Tag = ({
   className?: string;
 }) => {
   return (
-    <p
+    <span
       className={clsx(
         "2xl:font-semibold font-medium text-xl sm:text-[22px] 3xl:text-3xl ",
         className,
       )}
     >
       {children}
-    </p>
+    </span>
   );
 };
 
@@ -417,11 +417,11 @@ export const Findings_Box = () => {
           key={res.num}
           className="flex p-4  text-background flex-col gap-3 bg-[#5E5E5E] rounded-2xl"
         >
-          <p className="text-base font-medium">{res.head}</p>
-          <p className="text-sm">{res.text}</p>
-          <p className="text-3xl tracking-wide sm:tracking-wider text-cm-yellow font-semibold">
+          <span className="text-base font-medium">{res.head}</span>
+          <span className="text-sm">{res.text}</span>
+          <span className="text-3xl tracking-wide sm:tracking-wider text-cm-yellow font-semibold">
             {res.num}
-          </p>
+          </span>
         </div>
       ))}
     </div>

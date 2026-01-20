@@ -1,6 +1,8 @@
 "use client";
 import { Lock, X } from "lucide-react";
 import React, { useState } from "react";
+import { BsEyeSlashFill } from "react-icons/bs";
+import { FaEye } from "react-icons/fa6";
 
 type FN = {
   onSuccess: () => void;
@@ -8,6 +10,7 @@ type FN = {
 
 export const PasswordModal = ({ onSuccess }: FN) => {
   const [password, setPassword] = useState("");
+  const [showPwd, setShowPwd] = useState(false);
   const [error, setError] = useState("");
   const [isShaking, setIsShaking] = useState(false);
 
@@ -59,18 +62,32 @@ export const PasswordModal = ({ onSuccess }: FN) => {
           {/* Input Section */}
           <div className="w-full space-y-4">
             <div>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => {
-                  setPassword(e.target.value);
-                  setError("");
-                }}
-                onKeyPress={handleKeyPress}
-                placeholder="Enter password"
-                className="w-full px-4 py-3 border-2 rounded-lg focus:outline-none focus:border-cm-yellow transition-colors"
-                autoFocus
-              />
+              <div className="flex w-full items-center relative">
+                <input
+                  type={showPwd ? "text" : "password"}
+                  value={password}
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                    setError("");
+                  }}
+                  onKeyPress={handleKeyPress}
+                  placeholder="Enter password"
+                  className="w-full px-4 py-3 border-2 rounded-lg focus:outline-none focus:border-cm-yellow transition-colors"
+                  autoFocus
+                />
+
+                {showPwd ? (
+                  <FaEye
+                    onClick={() => setShowPwd(!showPwd)}
+                    className="absolute right-4 cursor-pointer"
+                  />
+                ) : (
+                  <BsEyeSlashFill
+                    onClick={() => setShowPwd(!showPwd)}
+                    className="absolute right-4  cursor-pointer"
+                  />
+                )}
+              </div>{" "}
               {error && (
                 <p className="text-red-500 text-sm mt-2 flex items-center gap-1">
                   <X className="w-4 h-4" />
@@ -81,7 +98,7 @@ export const PasswordModal = ({ onSuccess }: FN) => {
 
             <button
               onClick={handleSubmit}
-              className="w-full bg-cm-yellow hover:bg-cm-yellow/90 text-text-color font-semibold py-3 rounded-lg transition-colors border-2 border-black"
+              className="w-full bg-cm-yellow hover:bg-cm-yellow/90 text-text-color font-semibold py-3 rounded-lg transition-colors border-2 border-black cursor-pointer"
             >
               Unlock Project
             </button>

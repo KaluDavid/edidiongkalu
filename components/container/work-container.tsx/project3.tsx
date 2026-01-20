@@ -64,7 +64,7 @@ export const Project3 = () => {
         records.
       </Project_Tag>{" "}
       <Project_Tag head_text="Key Findings">
-        <ol className={clsx(ol)}>
+        <span className={clsx(ol)}>
           <li>Parents lose physical vaccination cards frequently.</li>
           <li>Parents lose physical vaccination cards frequently.</li>
           <li>Medication tracking is a growing need among young families.</li>
@@ -75,9 +75,10 @@ export const Project3 = () => {
             Hospitals need a shared record system to avoid mismatched data.{" "}
           </li>{" "}
           <li>
-            Health content must be simple, trustworthy, and locally relevant.{" "}
+            Health content must be simple, trustworthy, and locally
+            relevant.{" "}
           </li>
-        </ol>
+        </span>
         <span>
           These findings informed every design decision made during the project.
         </span>
