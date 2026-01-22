@@ -11,29 +11,36 @@ import { Project2 } from "@/components/container/work-container.tsx/project2";
 import { Project3 } from "@/components/container/work-container.tsx/project3";
 import { Project4 } from "@/components/container/work-container.tsx/project4";
 import { PasswordModal } from "./password-modal";
+import { Project_Card } from "../data/projects_card";
 
 const PROTECTED_PROJECT_ID = "3";
 
-export const ProjectWrapper = ({
-  data,
-  projectId,
-}: {
-  data: any;
+type Data = {
+  data: {
+    id: string;
+    text: string;
+    link: string;
+    bg: string;
+    head: string;
+    img: string;
+    role: string;
+    timeline: string;
+    industry: string;
+    description: string[];
+    protected: boolean;
+  };
   projectId: string;
-}) => {
-  const [isUnlocked, setIsUnlocked] = useState(false);
+};
 
-  useEffect(() => {
-    // Check if this is the protected project
-    if (projectId === PROTECTED_PROJECT_ID) {
-      setIsUnlocked(false);
-    } else {
-      setIsUnlocked(true);
-    }
-  }, [projectId]);
+export const ProjectWrapper = ({ data, projectId }: Data) => {
+  const [unlockedProjectId, setUnlockedProjectId] = useState<string | null>(
+    null,
+  );
+
+  const isUnlocked = projectId !== PROTECTED_PROJECT_ID || unlockedProjectId;
 
   const handlePasswordSuccess = () => {
-    setIsUnlocked(true);
+    setUnlockedProjectId(projectId);
   };
 
   // Show modal if project is protected and not unlocked

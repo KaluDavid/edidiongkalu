@@ -121,7 +121,7 @@ export const Project1 = () => {
           <li>
             KBS Insight can occupy the space between raw market infrastructure
             and trading access by offering:
-            <div className="pl-5 flex flex-col *:first-letter:font-medium">
+            <p className="pl-5 flex flex-col *:first-letter:font-medium">
               {" "}
               <span>
                 a. Simplified interpretation of data (not just charts and
@@ -136,7 +136,7 @@ export const Project1 = () => {
                 comparisons) that help demystify investing rather than add
                 complexity.
               </span>
-            </div>
+            </p>
           </li>
         </ol>
         <span>
@@ -160,11 +160,11 @@ export const Project1 = () => {
           helped shape how each feature of KBS Insight was designed and
           prioritized.
         </span>
-        <div className="flex sm:flex-row flex-col w-full justify-between  gap-8">
+        <p className="flex sm:flex-row flex-col w-full justify-between  gap-8">
           <User_Story text="As a retail investor, I want to view the overall market performance and the latest stock prices at a glance, so I can quickly understand how the market is performing today." />{" "}
           <User_Story text="As a new investor, I want to search for company profiles and see their historical performance, so I can decide whether they are worth investing in." />{" "}
           <User_Story text="As a user with multiple holdings, I want to create my own portfolio and add investments manually, so I can track my performance in one place instead of using spreadsheets." />
-        </div>
+        </p>
       </Project_Tag>
       <Project_Tag head_text="Interaction Design & Accessibility">
         Every interaction was designed to reduce cognitive load. Large
