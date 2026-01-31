@@ -1,6 +1,4 @@
-import { Project_Card } from "@/components/data/projects_card";
-import React from "react";
-import { H_Tag, P_Tag, Project_Tag, User_Story } from "../smaller_container";
+import { Project_Tag, User_Story } from "../smaller_container";
 import clsx from "clsx";
 import { img_style, ol, span } from "@/components/style/style";
 
@@ -49,8 +47,9 @@ export const Project2 = () => {
           was verbal, based on recognition, and prone to error.
         </span>
         <span>
-          This discovery shaped our guiding question:“How can we simplify estate
-          payments without disrupting existing trust structures?”
+          This discovery shaped our guiding question: <br />
+          “How can we simplify estate payments without disrupting existing trust
+          structures?”
         </span>
       </Project_Tag>{" "}
       <img src={"/prod1_img2.png"} alt="research" className={img_style} />
@@ -112,6 +111,13 @@ export const Project2 = () => {
             settlement features allow estate admins and super admins to
             understand payment patterns, outstanding balances, and estate
             performance in real time.
+          </li>
+          <li>
+            <span>Unrefined Reporting Systems:</span> Reporting in competitor
+            products is basic or non-existent. KoboSmart’s analytics and
+            settlement features allow estate admins and super admins to
+            understand payment patterns, outstanding balances, and estate
+            performance in real time..
           </li>
         </ol>
         <span>

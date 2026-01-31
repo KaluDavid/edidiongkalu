@@ -19,10 +19,9 @@ export const projects_card: Project_Card = [
     text: "Transforming bill payments for over 3,000 residents across multiple estates through intuitive design.",
     link: "",
     bg: "/work2.png",
-    protected: false,
 
     // OTHERs
-    head: "KoboSmart: Building a Smarter Way to Manage Estates and Pay Bills",
+    head: "Building a Smarter Way to Manage Estates and Pay Bills",
     img: "/project2_1.png",
     role: "Sole Product Designer",
     timeline: "Feb 2025 - Jul 2025",
@@ -30,6 +29,22 @@ export const projects_card: Project_Card = [
     description: [
       "Estate management in Nigeria has long depended on manual processes. Payments are collected through cash, bank transfers, and WhatsApp messages, leaving both residents and administrators struggling to stay organized. KoboSmart was designed to close this gap. It brings together bill payments, community management, and accountability into one digital platform.",
       "When I joined the project, my role was to lead the design for the entire product from concept to high-fidelity execution. I was responsible for shaping the resident experience, building admin tools, designing security interactions, and architecting the super admin web dashboard. The goal was to: design a unified platform that simplifies life for everyone in the estate ecosystem, residents, estate admins, security teams, and platform administrators.",
+    ],
+  },
+  {
+    id: "1",
+    text: "Creating Nigeria’s most accessible stock insight platform by rethinking how financial information is delivered.",
+    link: "",
+    bg: "/work1.png",
+
+    // OTHERS
+    head: "Financial Literacy for all Nigerians",
+    img: "/img2.png",
+    role: "Sole Product Designer",
+    timeline: "August 2025 - October 2025",
+    industry: "Fintech",
+    description: [
+      "When I began designing KBS Insight, my goal was to build a finance advisory platform that makes investment knowledge accessible to everyday Nigerians, not just financial experts or stockbrokers. The idea was to simplify how people interact with market data without stripping away the depth that serious investors need. As the sole product designer, I shaped the experience from the ground up, conducting research, mapping user flows, and creating an interface that feels modern, trustworthy, and easy to navigate. Every design decision was guided by the goal, to help users feel more confident and in control of their finances.",
     ],
   },
   {
