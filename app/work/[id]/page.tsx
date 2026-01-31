@@ -13,7 +13,6 @@ import { projects_card } from "@/components/data/projects_card";
 const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
   const data = projects_card.find((res) => res.id === id);
-  if (!data) return <div>No Data Found</div>;
 
   const renderProjectContent = () => {
     switch (data.id) {
@@ -90,4 +89,5 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
     </>
   );
 };
+
 export default Project;

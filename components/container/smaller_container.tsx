@@ -21,7 +21,7 @@ export const H_Tag = ({
     <div
       className={clsx(
         "font-bold 3xl:text-[114px] leading-[130%] text-[54px] sm:text-7xl sm:max-3xl:leading-20 font-clashGrotesk",
-        className
+        className,
       )}
     >
       {children}
@@ -59,14 +59,14 @@ export const P_Tag = ({
   className?: string;
 }) => {
   return (
-    <p
+    <span
       className={clsx(
         "2xl:font-semibold font-medium text-xl sm:text-[22px] 3xl:text-3xl ",
-        className
+        className,
       )}
     >
       {children}
-    </p>
+    </span>
   );
 };
 
@@ -82,7 +82,7 @@ export const Project_Card = ({
   return (
     <fieldset
       className={clsx(
-        "3xl:border-4 border-3 w-full rounded-2xl sm:rounded-4xl  pb-2  sm:pb-4 border-black flex flex-col justify-between sm:justify-end items-end bg-cover xl:h-fit bg-[#e6e6e6] bg-top  bg-no-repeat 3xl:h-[900]"
+        "3xl:border-4 border-3 w-full rounded-2xl sm:rounded-4xl  pb-2  sm:pb-4 border-black flex flex-col justify-between sm:justify-center items-center bg-cover xl:h-fit bg-[#e6e6e6] bg-top  bg-no-repeat 3xl:h-[900]",
       )}
     >
       {/* max-sm:h-[480px]  */}
@@ -266,7 +266,7 @@ export const Card = ({
     <div
       className={clsx(
         "sm:rounded-4xl rounded-2xl sm:border-5 border-3 border-black sm:gap-4",
-        className
+        className,
       )}
     >
       {children}
@@ -285,7 +285,7 @@ export const CD = ({
     <div
       className={clsx(
         "sm:border-5 absolute border-3 border-black flex items-center gap-2 w-fit pr-10 xl:pr-5 3xl:pr-10 rounded-2xl p-4 bg-cm-green",
-        className
+        className,
       )}
     >
       <img
@@ -333,7 +333,7 @@ export const Project_Box = ({
     <div
       className={clsx(
         "rounded-2xl sm:rounded-4xl p-8  3xl:p-12 flex flex-col gap-4  [&_h4]:flex [&_h4]:gap-1 [&_h4]:font-bold [&_h4]:font-clashGrotesk [&_h4]:text-3xl 3xl:[&_h4]:text-4xl text-background border-black w-full border-3!",
-        className
+        className,
       )}
     >
       <h4>
@@ -365,7 +365,7 @@ export const User_Story = ({ text }: { text: string }) => {
   return (
     <div
       className={clsx(
-        "rounded-[23px] sm:rounded-[34px]  flex flex-col items-start  border-black w-full border-3!"
+        "rounded-[23px] sm:rounded-[34px]  flex flex-col items-start  border-black w-full border-3!",
       )}
     >
       <p className="text-text-color py-2.5 rounded-t-2xl sm:rounded-t-4xl px-6 bg-cm-yellow w-full flex gap-1 font-bold font-clashGrotesk text-3xl 3xl:text-4xl">
@@ -409,7 +409,7 @@ export const Findings_Box = () => {
   return (
     <div
       className={clsx(
-        "grid lg:grid-cols-4 xl:grid-cols-5 sm:grid-cols-4  w-full gap-5 font-karl pt-5"
+        "grid lg:grid-cols-4 xl:grid-cols-5 sm:grid-cols-4  w-full gap-5 font-karl pt-5",
       )}
     >
       {findings?.map((res) => (
@@ -417,11 +417,11 @@ export const Findings_Box = () => {
           key={res.num}
           className="flex p-4  text-background flex-col gap-3 bg-[#5E5E5E] rounded-2xl"
         >
-          <p className="text-base font-medium">{res.head}</p>
-          <p className="text-sm">{res.text}</p>
-          <p className="text-3xl tracking-wide sm:tracking-wider text-cm-yellow font-semibold">
+          <span className="text-base font-medium">{res.head}</span>
+          <span className="text-sm">{res.text}</span>
+          <span className="text-3xl tracking-wide sm:tracking-wider text-cm-yellow font-semibold">
             {res.num}
-          </p>
+          </span>
         </div>
       ))}
     </div>

@@ -55,15 +55,21 @@ export const Project2 = () => {
       <img src={"/prod1_img2.png"} alt="research" className={img_style} />
       <Project_Tag head_text="Competitive Analysis">
         <span>
-          We began with contextual interviews in five estates across Lagos. We
-          observed how residents tracked payments and how admins managed
-          records. Most used a combination of receipts, phone notes, and
-          WhatsApp groups. Security teams confirmed that visitor verification
-          was verbal, based on recognition, and prone to error.
+          When we compared KoboSmart with similar platforms
+          like Sesa and Clannit, it became clear that while these products aim
+          to simplify estate living, they often introduce unnecessary complexity
+          for users. Their platforms require multiple steps to perform basic
+          actions such as bill payments, guest approvals, or dues tracking. Many
+          users find themselves switching between apps, dashboards, or even
+          manual confirmations to complete simple estate-related tasks.
         </span>
         <span>
-          This discovery shaped our guiding question:“How can we simplify estate
-          payments without disrupting existing trust structures?”
+          KoboSmart sets itself apart by taking a holistic approach. It merges
+          financial management, estate operations, and community coordination
+          into a single, easy-to-use experience. Instead of separating payments,
+          guest management, and security, KoboSmart unites these interactions
+          under one flow, making estate management both efficient and
+          transparent.
         </span>
       </Project_Tag>
       <Project_Tag head_text="Key Findings">
@@ -98,10 +104,13 @@ export const Project2 = () => {
             entirely. KoboSmart introduces layered roles: Resident, Admin,
             Security, and Super Admin, ensuring that each user type sees only
             what they need, minimizing confusion and maintaining data security.
-            Unrefined Reporting Systems: Reporting in competitor products is
-            basic or non-existent. KoboSmart’s analytics and settlement features
-            allow estate admins and super admins to understand payment patterns,
-            outstanding balances, and estate performance in real time.
+          </li>
+          <li>
+            <span>Unrefined Reporting Systems:</span> Reporting in competitor
+            products is basic or non-existent. KoboSmart’s analytics and
+            settlement features allow estate admins and super admins to
+            understand payment patterns, outstanding balances, and estate
+            performance in real time.
           </li>
           <li>
             <span>Unrefined Reporting Systems:</span> Reporting in competitor
