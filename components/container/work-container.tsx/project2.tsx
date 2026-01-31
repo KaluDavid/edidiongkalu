@@ -1,6 +1,4 @@
-import { Project_Card } from "@/components/data/projects_card";
-import React from "react";
-import { H_Tag, P_Tag, Project_Tag, User_Story } from "../smaller_container";
+import { Project_Tag, User_Story } from "../smaller_container";
 import clsx from "clsx";
 import { img_style, ol, span } from "@/components/style/style";
 
@@ -49,8 +47,9 @@ export const Project2 = () => {
           was verbal, based on recognition, and prone to error.
         </span>
         <span>
-          This discovery shaped our guiding question:“How can we simplify estate
-          payments without disrupting existing trust structures?”
+          This discovery shaped our guiding question: <br />
+          “How can we simplify estate payments without disrupting existing trust
+          structures?”
         </span>
       </Project_Tag>{" "}
       <img src={"/prod1_img2.png"} alt="research" className={img_style} />
@@ -103,6 +102,13 @@ export const Project2 = () => {
             basic or non-existent. KoboSmart’s analytics and settlement features
             allow estate admins and super admins to understand payment patterns,
             outstanding balances, and estate performance in real time.
+          </li>
+          <li>
+            <span>Unrefined Reporting Systems:</span> Reporting in competitor
+            products is basic or non-existent. KoboSmart’s analytics and
+            settlement features allow estate admins and super admins to
+            understand payment patterns, outstanding balances, and estate
+            performance in real time..
           </li>
         </ol>
         <span>
@@ -356,164 +362,6 @@ export const Project2 = () => {
         </span>
       </Project_Tag>
       <img src={"/prod1_img7.png"} alt="estate" className={img_style} />
-      <Project_Tag head_text="Estate Admins">
-        <span className={clsx(span)}>
-          <p>
-            <span>Comprehensive Overview Dashboard:</span> The estate admin
-            dashboard gives an at-a-glance view of all essential metrics. This
-            helps admins track estate finances and engagement effortlessly.
-          </p>{" "}
-          <p>
-            <span>Quick Actions Panel:</span> Admins have quick access to core
-            estate management tools all organized for efficiency and ease of
-            navigation.
-          </p>
-          <p>
-            {" "}
-            <span>Resident Admission Management:</span> The admin can review,
-            approve, or reject admission requests from residents. Each request
-            shows detailed resident and apartment information for verification
-            before approval.
-          </p>
-        </span>
-      </Project_Tag>
-      <img src={"/prod1_img8.png"} alt="estate" className={img_style} />
-      <Project_Tag head_text="Estate Members">
-        <span className={clsx(span)}>
-          <p>
-            <span>Detailed Member Overview:</span> The Members page lists all
-            estate members with essential details such as name, role, status,
-            and date joined. This allows admins to quickly assess estate
-            participation and track member activity.
-          </p>
-          <p>
-            <span>Role & Visibility:</span> Admins can filter members by role
-            (Resident, Security, Admin) or payment status, making it easier to
-            manage responsibilities and identify overdue residents.
-          </p>
-          <p>
-            <span>Quick Member Action:</span> Each member row includes quick
-            actions like Edit, View Details, Suspend, or Remove. This gives
-            admins control without navigating away from the page.
-          </p>
-          <p>
-            <span>Member Details:</span> Clicking on a member opens a detailed
-            side drawer showing profile information, contact details, apartment
-            type, and payment history, all organized for clarity.
-          </p>
-          <p>
-            <span>Status Indicator:</span> Visual cues (e.g., green for paid,
-            red for owing) immediately show who’s in good standing and who needs
-            follow-up.
-          </p>
-        </span>
-      </Project_Tag>
-      <img src={"/prod1_img9.png"} alt="estate members" className={img_style} />
-      <Project_Tag head_text="Unpaid Bills">
-        <span className={clsx(span)}>
-          <p>
-            {" "}
-            <span>Centralized Overview of Overdue Payments:</span> The first
-            screen presents a clear, minimal view of all overdue payments,
-            making it easy for admins to track estate-wide payment status.
-          </p>{" "}
-          <p>
-            <span>Details for Each Bill Type:</span> When an admin taps “View,”
-            they’re taken to a detailed list of members who owe for that
-            specific bill. Each row includes the member’s name, the due date,
-            and quick access actions, creating a transparent record of unpaid
-            obligations.{" "}
-          </p>
-          <p>
-            <span>Confirmation for Reminders:</span> A lightweight modal
-            confirmation screen appears when sending reminders. This prevents
-            accidental triggers and provides a sense of control and assurance
-            for the admin.
-          </p>
-        </span>
-      </Project_Tag>
-      <img
-        src={"/prod1_img10.png"}
-        alt="estate members"
-        className={img_style}
-      />
-      <Project_Tag head_text="Bill Management">
-        <span className={clsx(span)}>
-          <p>
-            {" "}
-            <span>Detailed Setup:</span> Administrators can define the bill
-            name, due date, and whether the bill is recurring. Flexible Pricing:
-            Bill amounts can be configured to be the &quot;Same amount for all
-            buildings&quot; or varied &quot;By Building Type.&quot;
-          </p>
-          <p>
-            {" "}
-            Confirmation & Review: A final review screen ensures all details are
-            correct before a &quot;Bill Created Successfully&quot; confirmation
-            is displayed.
-          </p>
-        </span>
-      </Project_Tag>
-      <img
-        src={"/prod1_img11.png"}
-        alt="Bill Managment "
-        className={img_style}
-      />{" "}
-      <Project_Tag head_text="Reports">
-        <span className={span}>
-          <p>
-            {" "}
-            <span>Quick Financial Snapshot:</span> The Quick Overview provides
-            immediate views of both &quot;Recent Settlements&quot; and
-            &quot;Recent Payments.&quot;
-          </p>{" "}
-          <p>
-            <span>Export Functionality:</span> Both the Transactional and
-            Settlement reports include an &quot;Export&quot; or &quot;Download
-            Report&quot; option for external use.
-          </p>{" "}
-          <p>
-            <span>Settlement Tracking:</span> The Settlement Report displays the
-            &quot;Total Amount Settled,&quot; the &quot;Next Settlement
-            Date,&quot; and a history of all transfers.
-          </p>
-          <p>
-            {" "}
-            <span>Ledger Balance View:</span> The Ledger Report tracks the
-            &quot;Pending Settlement&quot; amount and provides a detailed
-            breakdown of the amounts contributing to that ledger.
-          </p>
-        </span>
-      </Project_Tag>
-      <img src={"/prod1_img12.png"} alt="reports" className={img_style} />{" "}
-      <Project_Tag head_text="Security">
-        <span className={clsx(span)}>
-          <p>
-            <span>Member & Guest Verification Access:</span> Security officers
-            have dedicated access to verify the identity of estate members and
-            guests.
-          </p>
-          <p>
-            <span>Recent Activity Log: </span>A timeline of &quot;Recent
-            Activities&quot; tracks who has been recently verified, including
-            members and guests.
-          </p>
-          <p>
-            <span>Bill Status Check:</span> The system verifies if members have
-            paid all necessary bills before granting access.
-          </p>
-          <p>
-            <span>Guest Pass Validation:</span> Guest verification is based on
-            validating a pre-existing &quot;Guest Pass&quot; created by a
-            resident.
-          </p>
-        </span>
-      </Project_Tag>
-      <img
-        src={"/prod1_img13.png"}
-        alt="estate members"
-        className={img_style}
-      />
       <Project_Tag head_text="User Testing">
         <span>
           After completing the first design iteration, we conducted moderated
@@ -550,18 +398,6 @@ export const Project2 = () => {
             during the bill payment flow because the amount summary appeared
             below the payment options. We moved the summary higher up and added
             a confirmation step that improved clarity.{" "}
-          </li>
-          <li>
-            <span>Security Role Clarity:</span> Security users were initially
-            unsure about how to verify guest passes. We added a clearer
-            call-to-action—“Verify Guest”—and reduced the number of steps
-            required.
-          </li>
-          <li>
-            <span>Admin Overload:</span> Estate admins felt overwhelmed by the
-            number of settings during bill creation. We introduced tooltips,
-            grouped related fields, and collapsed advanced options to reduce
-            visual noise.
           </li>
           <li>
             <span>Positive Feedback on Flow:</span> Across all roles, testers

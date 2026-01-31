@@ -1,3 +1,4 @@
+import Project_Link from "@/components/container/project_link";
 import {
   H_Tag,
   P_Tag,
@@ -17,9 +18,9 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
   const renderProjectContent = () => {
     switch (data.id) {
       case "0":
-        return <Project1 />;
-      case "1":
         return <Project2 />;
+      case "1":
+        return <Project1 />;
       case "2":
         return <Project3 />;
       case "3":
@@ -67,6 +68,7 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
         </P_Tag>
         {renderProjectContent()}
       </section>
+      <Project_Link />
       {/* 
       <div className="flex flex-col bg-cm-yellow border-3 rounded-4xl py-10 sm:py-20 px-5 sm:px-10 lg:px-[90] justify-center text-center items-center gap-[88px]">
         <H_Tag className="3xl:text-6xl! sm:leading-[120%]! sm:text-[45px]! text-[35px]! ">
