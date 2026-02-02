@@ -1,3 +1,4 @@
+// ...existing code...
 type Project_Card = {
   id: string;
   text: string;
@@ -19,6 +20,7 @@ export const projects_card: Project_Card = [
     text: "Transforming bill payments for over 3,000 residents across multiple estates through intuitive design.",
     link: "",
     bg: "/work2.png",
+    protected: false,
 
     // OTHERs
     head: "Building a Smarter Way to Manage Estates and Pay Bills",
@@ -36,6 +38,7 @@ export const projects_card: Project_Card = [
     text: "Creating Nigeria’s most accessible stock insight platform by rethinking how financial information is delivered.",
     link: "",
     bg: "/work1.png",
+    protected: false,
 
     // OTHERS
     head: "Financial Literacy for all Nigerians",
@@ -48,10 +51,10 @@ export const projects_card: Project_Card = [
     ],
   },
   {
-    id: "1",
+    id: "2",
     text: "Accelerating digital health adoption by creating a user friendly website that clearly communicates impact.",
     link: "",
-    bg: "/work3.png ",
+    bg: "/work3.png",
     protected: false,
 
     // OTHERS
@@ -66,7 +69,7 @@ export const projects_card: Project_Card = [
     ],
   },
   {
-    id: "2",
+    id: "3",
     text: "Driving better financial habits for students by simplifying savings, debt tracking and long-term goal planning.",
     link: "",
     bg: "/work4.png",
@@ -80,24 +83,6 @@ export const projects_card: Project_Card = [
     description: [
       "Managing finances as a student can be challenging, with limited income, academic expenses, and the temptation of impulse spending. Many students struggle to build healthy savings habits, plan for long-term goals, and manage debt effectively. This project focuses on developing a student-focused savings application that simplifies financial planning, promotes disciplined saving and provides tools to help students achieve financial security during and after their studies.",
       "The app is designed to empower students to save, budget, and manage debt, enabling them to build habits that lead to financial independence. It introduces innovative features such as goal-based savings, group savings, and a unique lock funds feature, allowing students to secure savings until after graduation, ensuring they have funds available for important life transitions.",
-    ],
-  },
-
-  {
-    id: "3",
-    text: "Creating Nigeria’s most accessible stock insight platform by rethinking how financial information is delivered.",
-    link: "",
-    bg: "/work1.png",
-    protected: true,
-
-    // OTHERS
-    head: "KBS Insight: Financial Literacy for all Nigerians",
-    img: "/img2.png",
-    role: "Sole Product Designer",
-    timeline: "August 2025 - October 2025",
-    industry: "Fintech",
-    description: [
-      "When I began designing KBS Insight, my goal was to build a finance advisory platform that makes investment knowledge accessible to everyday Nigerians, not just financial experts or stockbrokers. The idea was to simplify how people interact with market data without stripping away the depth that serious investors need. As the sole product designer, I shaped the experience from the ground up, conducting research, mapping user flows, and creating an interface that feels modern, trustworthy, and easy to navigate. Every design decision was guided by the goal, to help users feel more confident and in control of their finances.",
     ],
   },
 ];
