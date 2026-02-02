@@ -14,6 +14,23 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
   const data = projects_card.find((res) => res.id === id);
 
+  // Guard: handle missing project
+  if (!data) {
+    return (
+      <>
+        <section className="flex flex-col justify-center pb-10 sm:pb-20 pt-30 sm:pt-50 size-full overflow-x-hidden gap-1 px-5 sm:px-10 lg:px-[90] relative">
+          <H_Tag className="sm:text-[67px]! text-[35px]! w-full">
+            Project not found
+          </H_Tag>
+          <P_Tag className="flex flex-col gap-8">
+            <span>The project you requested does not exist.</span>
+          </P_Tag>
+        </section>
+        <Project_Link />
+      </>
+    );
+  }
+
   const renderProjectContent = () => {
     switch (data.id) {
       case "0":
@@ -61,33 +78,17 @@ const Project = async ({ params }: { params: Promise<{ id: string }> }) => {
           </div>
         </div>
         <P_Tag className="flex flex-col gap-8">
-          {data.description?.map((res) => (
-            <span key={res.length}>{res}</span>
+          {data.description?.map((res, idx) => (
+            <span key={idx}>{res}</span>
           ))}
         </P_Tag>
         {renderProjectContent()}
       </section>
       <Project_Link />
-      {/* 
-      <div className="flex flex-col bg-cm-yellow border-3 rounded-4xl py-10 sm:py-20 px-5 sm:px-10 lg:px-[90] justify-center text-center items-center gap-[88px]">
-        <H_Tag className="3xl:text-6xl! sm:leading-[120%]! sm:text-[45px]! text-[35px]! ">
-          View these other Projects
-        </H_Tag>
-        <div className="flex w-full overflow-x-scroll inset-0 *:min-w-[350px] sm:*:min-w-[476px] gap-8">
-          {projects_card?.map((res) => {
-            return res.id === data.id ? null : (
-              <Project_Card
-                key={res.id}
-                text={res.text}
-                bg={res.bg}
-                link={`/work/${res.id}`}
-              />
-            );
-          })}
-        </div>
-      </div> */}
+      {/* ...existing code... */}
     </>
   );
 };
+// ...existing code...;
 
 export default Project;
